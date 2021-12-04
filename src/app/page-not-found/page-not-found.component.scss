@@ -1,0 +1,24 @@
+.page-not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: column-reverse;
+}
+
+.page-not-found .text{
+    flex: 1;
+    position: relative;
+    margin: 20px;
+}
+
+.page-not-found .image{
+    flex: 2;
+}
+.page-not-found .text a {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
