@@ -10,6 +10,8 @@ import { UiStyleToggleService } from '../../services/ui-style-toggle.service';
   styleUrls: ['./landing-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
+
 export class LandingPageComponent implements OnInit {
   constructor(private ThemeService: UiStyleToggleService) {}
   public isDark: boolean = false;
