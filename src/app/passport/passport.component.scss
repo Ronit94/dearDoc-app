@@ -1,0 +1,26 @@
+.passport{
+    top: 50%;
+    left: 50%;
+    width: 85em;
+    height: 18em;
+    margin-top: -18em;
+    margin-left: -40em;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 81vh;
+}
+
+.passport .p_l_container{
+    flex: 1;
+}
+
+.passport .p_l_image{
+    flex: 1;
+}
+
+.passport .p_l_image img{
+    height: 500px;
+}

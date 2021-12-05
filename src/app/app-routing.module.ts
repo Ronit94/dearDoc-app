@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, PreloadingStrategy, RouterModule, Routes } from '@angular/router';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -17,6 +17,7 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: '/landing',
   },
+  { path: 'passport', loadChildren: () => import('./passport/passport.module').then(m => m.PassportModule) },
   {
     path: '**',
     redirectTo: '/404',
@@ -24,7 +25,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+    preloadingStrategy: PreloadAllModules
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

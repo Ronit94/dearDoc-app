@@ -1,0 +1,48 @@
+.login {
+  margin: 25px;
+  height: 75vh;
+  position: relative;
+}
+
+.login .form {
+  margin-top: 50px;
+  // width: 25vw;
+  // height: 50px;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.login .form .full-width {
+  width: 25vw;
+}
+
+.login .google button{
+  border: none;
+  border-radius:12px;
+}
+
+.forgot-password{
+  margin-left: 37%;
+}
+
+.forgot-password a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-btn{
+  margin-top: 25px;
+}
+
+.login-btn button{
+  width: 25vw;
+}
+
+.footer{
+  margin-top: 6rem;
+  margin-left: 15em;
+  text-decoration: dashed;
+  opacity: 0.5;
+}

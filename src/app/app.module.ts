@@ -10,6 +10,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+
 @NgModule({
   declarations: [
     AppComponent,
